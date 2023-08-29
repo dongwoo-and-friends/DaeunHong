@@ -1,0 +1,9 @@
+def solution(num, k):
+    num_list = list(str(num))
+    # 정수 num을 문자열로 바꾸고 각 자리수를 리스트로 
+    for i in range(len(num_list)):
+        if num_list[i] == str(k):
+            # 타입 맞춰줌
+            return i
+        else:
+            return -1
